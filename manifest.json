@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Quickfiller",
+  "description": "Makes a stupid guess and fill out the form with this data.",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs", "*://*/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["vendor/zepto.min.js", "vendor/fuzzyset.js", "contentscript.js"]
+    }
+  ]
+}
