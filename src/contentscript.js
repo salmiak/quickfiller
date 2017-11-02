@@ -55,7 +55,7 @@
 
       console.log('key is ' + key);
 
-      $this.attr('style','background: #FFD;')
+      $this.attr('style','background: #FFD; color: rgba(0,0,0,0.8);')
 
       // Populate storage data
       chrome.storage.sync.get( key, function(data) {
@@ -63,7 +63,7 @@
         if (prevVal) {
           console.log("setting " + key + " to " + prevVal);
           $this.val( prevVal )
-          $this.attr('style','background: #FDF;')
+          $this.attr('style','background: #FDF; color: rgba(0,0,0,0.8);')
         }
       });
 
@@ -90,7 +90,7 @@
             }
 
             chrome.storage.sync.set(toStore, function() {
-              $this.attr('style','background: #DFF;')
+              $this.attr('style','background: #DFF; color: rgba(0,0,0,0.8);')
             })
 
           }
