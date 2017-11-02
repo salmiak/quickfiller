@@ -15,7 +15,7 @@
   "content_scripts": [
     {
       "matches": ["*://*/*"],
-      "js": ["vendor/zepto.min.js", "vendor/fuzzyset.js", "contentscript.js"]
+      "js": ["contentscript.js"]
     }
   ]
 }
