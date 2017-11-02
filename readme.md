@@ -10,3 +10,12 @@ Run `npm install` to install dependencies
 Run `grunt build` to build production verions
 
 Run `grunt dev` to set up watch
+
+## Running extension
+
+1. In the Chrome dropdown menu go to `More Tools > Extensions`
+2. At the top of screen tick in "Developer mode"
+3. Hit the `Load unpacked extension` and find the `build`-folder in this project.
+4. Hit select - Done!
+
+To reload the extension, hit `Reload` on the extensions page in Chrome.
