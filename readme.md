@@ -19,3 +19,9 @@ Run `grunt dev` to set up watch
 4. Hit select - Done!
 
 To reload the extension, hit `Reload` on the extensions page in Chrome.
+
+## Colors
+When the extension runs it changes the background color of the input fields.
+* **Yellow** input field have be found by the extension
+* **Pink** input fields where pre-populated with data from storage
+* **Blue** input fields have saved new data (that you've entered) to the storage 
